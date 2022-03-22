@@ -1,10 +1,13 @@
 import Express, { NextFunction, Request, Response } from "express";
-import { routes } from "@routes/.";
+import { routesGlobal } from "@routes/.";
 
 const app = Express();
+
+
+
 app.use(Express.json());
 
-app.use(routes)
+app.use(routesGlobal)
 
 app.use(
   (error: Error, request: Request, response: Response, next: NextFunction) => {

@@ -13,14 +13,13 @@
     "emitDecoratorMetadata": true,         
     "skipLibCheck": true,                     
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "@controllers/*": ["./src/http/controller/*"],
       "@routes/*": ["./src/routes/*"],
     }
   },
-  
-  "include": [
+    "include": [
     "src/**/*"
   ],
   "exclude": [

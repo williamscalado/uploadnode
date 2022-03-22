@@ -1,5 +1,10 @@
-import { Router } from "express"
+import { Router } from "express";
+import { routesUser } from "./user/indes";
 
-const routes = Router()
+const routesGlobal = Router();
 
-export { routes }
+
+routesGlobal.use(routesUser)
+
+
+export { routesGlobal };
